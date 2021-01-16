@@ -5,10 +5,12 @@
 Bikeshare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project uses Python to explore and query data related to bike share in three cities.
 
 ### Files used
-Include the files used
+chicago.csv
+New_york_city.csv 
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
