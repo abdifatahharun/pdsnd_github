@@ -170,7 +170,7 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # Display counts of user types
+    # this section display the breakdown of user types
     print('\n What is the breakdown of users?')
     print(df['User Type'].value_counts())
 
