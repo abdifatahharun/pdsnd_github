@@ -13,5 +13,5 @@ New_york_city.csv
 washington.csv
 
 ### Credits
-Udacity and  Programming with Mosh.
+Udacity, stack overflow and Programming with Mosh.
 
