@@ -199,9 +199,9 @@ def user_stats(df):
 def display_data(df):
     """ Display 5 lines raw data as requested by the user."""
 
-    raw_data = input('\nWould you like to view 5 rows of individual trip raw data? Enter yes or no\n').lower()
+    display_raw_input = input('\nWould you like to view 5 rows of individual trip raw data? Enter yes or no\n').lower()
     start_loc = 0
-    while raw_data.lower() == 'yes':
+    while display_raw_input .lower() == 'yes':
         print(df.iloc[start_loc:start_loc+5])
         start_loc += 5
         view_display = input('Do you wish to continue?:Enter yes or no.\n' ).lower()
