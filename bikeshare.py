@@ -12,13 +12,13 @@ def get_filters():
 
     Returns:
         (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
+        (str) month - name of the month to filter by, or "all" to apply no month filter. months are from January throughout June
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-            city = input('Would you like to see data from Chicago, New York City, or Washington? \n').title()
+            city = input('What city would you like to see data from?? Chicago, New York City, or Washington? \n').title()
             if city not in CITY_DATA:
                 print('\n oop..... invalid city name, please try again!\n')
                 continue
@@ -199,9 +199,9 @@ def user_stats(df):
 def display_data(df):
     """ Display 5 lines raw data as requested by the user."""
 
-    raw_data = input('\nWould you like to view 5 rows of individual trip raw data? Enter yes or no\n').lower()
+    display_raw_input = input('\nWould you like to view 5 rows of individual trip raw data? Enter yes or no\n').lower()
     start_loc = 0
-    while raw_data.lower() == 'yes':
+    while display_raw_input .lower() == 'yes':
         print(df.iloc[start_loc:start_loc+5])
         start_loc += 5
         view_display = input('Do you wish to continue?:Enter yes or no.\n' ).lower()
